@@ -14,7 +14,7 @@ export default function createUser() {
 							<label for="password" class="form-label">Confirm Password</label>
 							<input type="password" class="form-control" id="confirm_password" required>
 						</div>
-						<button type="submit" class="btn btn-primary">Sign In</button>
+						<button type="submit" id="sign_up" class="btn btn-primary">Sign Up</button>
 					</form>
 				</div>
 			</div>`;

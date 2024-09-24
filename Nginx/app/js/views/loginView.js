@@ -21,7 +21,7 @@ export default function loginView() {
 							<label for="password" class="form-label">Password</label>
 							<input type="password" class="form-control" id="password" required>
 						</div>
-						<button type="submit" class="btn btn-primary">Sign In</button>
+						<button type="submit" id="sign_in" class="btn btn-primary">Sign In</button>
 					</form>
 						<div class="mt-3">
 							<a href="/Signup" class="routelink-primary">Don't have an account? Sign up</a>
