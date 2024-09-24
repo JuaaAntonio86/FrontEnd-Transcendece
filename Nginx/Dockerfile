@@ -6,7 +6,7 @@ FROM nginx:latest
 COPY nginx.conf /etc/nginx/nginx.conf
 
 # Copy your website's static files to the appropriate directory
-COPY html /usr/share/nginx/html
+COPY /app /usr/share/nginx/html
 
 # Expose port 80 to the outside world
 EXPOSE 80
