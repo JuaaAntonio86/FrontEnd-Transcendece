@@ -13,11 +13,9 @@ function handleRouteChange() {
 		// 	break;
 		case '/Signup':
 			view = createUser();
-			signup();
 			break;
 		case '/login':
 			view = loginView();
-			signin();
 			break;
 			// case '/game':
 			// view = gameScreen();
@@ -25,16 +23,22 @@ function handleRouteChange() {
 			// case '/game':
 			// view = gameScreen();
 			// break;
-		
-		
 		default:
 			view = '<h1>404</h1>';
 	}
 	document.getElementById('app').innerHTML = view;
+	handleEventListeners(path);
 }
 
-function homeView() {
-	return '<h1>Home Page</h1>';
+function handleEventListeners(path) {
+	switch (path) {
+		case '/Signup':
+			signup();
+			break;
+		case '/login':
+			signin();
+			break;
+	}
 }
 
 document.querySelectorAll('.route').forEach(link => {
